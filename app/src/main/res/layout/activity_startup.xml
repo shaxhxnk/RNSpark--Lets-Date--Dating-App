@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.StartupActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/startup_logo_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rnspark_logo" />
+
+    <Button
+        style="@style/StandardButton"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@drawable/gradient_1"
+        android:onClick="onLogin"
+        android:text="@string/startup_button_login" />
+
+    <Button
+        style="@style/StandardButton"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_1"
+        android:onClick="onSignup"
+        android:text="@string/startup_button_signup" />
+
+    <TextView
+        android:id="@+id/privacyPolicy3"
+        style="@style/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/privacyPolicy"
+        style="@style/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:textSize="14sp" />
+
+</LinearLayout>
